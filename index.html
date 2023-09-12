@@ -35,9 +35,9 @@
                         <li class="nav-item">
                             <a class="nav-link" href="Blog Posts.html">Blog Posts</a>
                         </li>
-                        <li class="nav-item">
+                        <!-- <li class="nav-item">
                             <a class="nav-link" href="Contact.html">Contact</a>
-                        </li>
+                        </li> -->
                     </ul>
                 </div>
             </div>
@@ -49,12 +49,12 @@
         <!-- Sidebar -->
 
         <div class="side-bar-left">
-            <img class="images_profil" src="mesange-bleue-1-055106.jpeg" alt="Image Profil">
+            <img class="images_profil" src="IMG_1940.jpg" alt="Image Profil">
             <nav class="side_bar_links">
-                <i class="fa-solid fa-location-dot"> </i> Canada<br>
-                <i class="fa-brands fa-linkedin"> </i> <a href="https://www.linkedin.com"> Linkedin</a> <br>
-                <i class="fa-solid fa-envelope"> </i><a href="email"> Email</a><br>
-                <i class="fa-brands fa-github"> </i> <a href="">Github</a> <br>
+                <i class="fa-solid fa-location-dot"> </i> Montréal, CA<br>
+                <i class="fa-brands fa-linkedin"> </i> <a href="https://www.linkedin.com/in/sofiane-azogagh-5332651b8/"> Linkedin</a> <br>
+                <i class="fa-solid fa-envelope"> </i><a href="mailto:azogagh.sofiane@courrier.uqam.ca"> Email</a><br>
+                <i class="fa-brands fa-github"> </i> <a href="https://github.com/sofianeazogagh">Github</a> <br>
             </nav>
         </div>
 
@@ -63,14 +63,11 @@
             <h1>Homepage</h1>
             <hr>
 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores dolor assumenda eos veritatis qui soluta
-                eveniet necessitatibus adipisci officiis, placeat doloribus quaerat amet facere voluptate nostrum sint
-                ratione minus inventore, perferendis commodi explicabo fugit illo fugiat! Aut fuga dolores iure possimus
-                perspiciatis. Debitis nam eius est similique aperiam et deleniti cupiditate accusantium dolorum
-                excepturi quae enim eos, magnam, minus aspernatur laboriosam consequatur quasi dolor culpa doloribus.
-                Enim ea reiciendis a error minus blanditiis excepturi qui dolor laudantium officiis veritatis quasi
-                aspernatur rerum, iste porro perferendis ipsum dolorum. Earum ex, autem voluptates facilis doloribus
-                cumque obcaecati? Distinctio harum ex itaque! Esse.</p>
+            <p>I am currently a PhD Student at the Université du Québec à Montréal (Montréal Canada).
+                My research is on the intersection of Cryptography and Machine Learning. 
+                In particular, I delve into the innovative application of Homomorphic Encryption techniques
+                to enhance data privacy within the realm of machine learning.
+                </p>
 
 
             <!-- Paginations -->
@@ -87,9 +84,13 @@
     <footer class="bg-light text-center text-lg-start">
         <!-- Copyright -->
         <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-            2022 - Azogagh Sofiane
+          <span id="currentYear"></span> - Azogagh Sofiane
         </div>
-    </footer>
+      </footer>
+      
+      <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+      </script>
 
 
     <!-- Scripts -->
