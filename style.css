@@ -88,3 +88,12 @@ footer {
     color: blue;
     text-decoration: underline;
 }
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width:600px){
+ body{
+   zoom: 0.65;
+ }
+
+} 
