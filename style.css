@@ -98,7 +98,7 @@ footer div{
 
 /* MEDIA QUERIES */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 620px) {
   .navbar-brand {
     zoom: 0.7;
     margin-bottom: 15px;
@@ -113,7 +113,7 @@ footer div{
     zoom: 0.65;
   }
   .side_bar_links {
-    zoom: 0.6;
+    zoom: 0.55;
   }
   .side_bar_links i {
     padding: 13px 0;
