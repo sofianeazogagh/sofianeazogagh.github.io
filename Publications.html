@@ -63,16 +63,6 @@
 
   </header>
   <main>
-    <div class="side-bar-left">
-      <img class="images_profil" src="pic_at_whac.jpg" alt="Image Profil">
-      <nav class="side_bar_links">
-        <i class="fa-solid fa-location-dot"> </i> Montréal, CA<br>
-        <i class="fa-brands fa-linkedin"> </i> <a href="https://www.linkedin.com/in/sofiane-azogagh-5332651b8/">
-          Linkedin</a> <br>
-        <i class="fa-solid fa-envelope"> </i><a href="mailto:azogagh.sofiane@courrier.uqam.ca"> Email</a><br>
-        <i class="fa-brands fa-github"> </i> <a href="https://github.com/sofianeazogagh">Github</a> <br>
-      </nav>
-    </div>
     <div class="main-content">
       <h1>Publications</h1>
       <hr>
@@ -327,6 +317,14 @@
         }, 2000);
       });
     }
+  </script>
+
+  <script>
+    fetch('sidebar.html')
+      .then(response => response.text())
+      .then(data => {
+        document.querySelector('main').insertAdjacentHTML('afterbegin', data);
+      });
   </script>
 </body>
 
