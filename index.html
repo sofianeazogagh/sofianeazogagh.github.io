@@ -8,12 +8,46 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+
     <title>Azogagh Sofiane</title>
 </head>
 
 <body>
-
     <header>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#about">Sofiane Azogagh</a> <!-- point vers l'id about -->
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#about">About Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#publications">Publications</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#teaching">Teaching</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#talks">Talks</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#blog">Blog Posts</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <button id="toggleDarkMode" title="Mode sombre">🌙</button>
+        </nav>
+    </header>
+
+    <!-- <header>
         <nav class="navbar navbar-expand-lg bg-light">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html">Azogagh Sofiane</a>
@@ -40,35 +74,402 @@
             </div>
         </nav>
 
-    </header>
+    </header> -->
     <main>
-
         <div class="main-content">
-            <h1>Homepage</h1>
-            <hr>
+            <div class="section" id="about">
+                <h1>About Me</h1>
+                <hr>
+                <p>I am currently a PhD Student at the Université du Québec à Montréal under
+                    the supervision of <a href="https://kirija.github.io"> Marc-Olivier Killijian</a>
+                    and <a href="https://sebastiengambs.openum.ca/team/"> Sébastien Gambs</a>.
+                    My research is on the intersection of Cryptography and Machine Learning.
+                    In particular, I delve into the innovative application of Homomorphic Encryption techniques
+                    to enhance data privacy within the realm of machine learning. This type of encryption enables
+                    the processing of data in an encrypted form, allowing computations to be performed on the
+                    encrypted data without the need for decryption. This revolutionary capability preserves the privacy
+                    and security of sensitive information throughout the entire computational process.
+                </p>
+            </div>
 
-            <p>I am currently a PhD Student at the Université du Québec à Montréal under
-                the supervision of <a href="https://kirija.github.io"> Marc-Olivier Killijian</a>
-                and <a href="https://sebastiengambs.openum.ca/team/"> Sébastien Gambs</a>.
-                My research is on the intersection of Cryptography and Machine Learning.
-                In particular, I delve into the innovative application of Homomorphic Encryption techniques
-                to enhance data privacy within the realm of machine learning. This type of encryption enables
-                the processing of data in an encrypted form, allowing computations to be performed on the
-                encrypted data without the need for decryption. This revolutionary capability preserves the privacy
-                and security of sensitive information throughout the entire computational process.
-            </p>
 
+            <div class="section" id="publications">
+                <h1>Publications</h1>
+                <hr>
+                <!-- Blind Sort -->
+                <div class="publication-entry">
+                    <div class="publication-header">
+                        <h4 style="font-size: 1.1em"> A non-comparison oblivious sort
+                            and its application to private k-NN</h4>
+                        <div class="paper-links">
+                            <a href="https://petsymposium.org/popets/2025/popets-2025-0093.pdf" title="PDF"><i
+                                    class="fa-solid fa-file-pdf"></i></a>
+                            <a href="#" onclick="showBibtex('bibtexBlindSort')" title="BibTeX"><i
+                                    class="fa-solid fa-quote-right"></i></a>
+                            <a href="https://github.com/sofianeazogagh/knn" title="GitHub"><i
+                                    class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                    <p style="font-size: 0.9em">Proceedings on Privacy Enhancing Technologies 2025 with M-O. Killijian
+                        and F.
+                        Larose-Gervais</p>
+                </div>
 
+                <!-- RevoLUT -->
+                <div class="publication-entry">
+                    <div class="publication-header">
+                        <h4 style="font-size: 1.1em">RevoLUT : Rust Efficient Versatile Oblivious Look-Up-Tables</h4>
+                        <div class="paper-links">
+                            <a href="https://eprint.iacr.org/2024/1935.pdf" title="PDF"><i
+                                    class="fa-solid fa-file-pdf"></i></a>
+                            <a href="https://github.com/sofianeazogagh/revoLUT" title="GitHub"><i
+                                    class="fa-brands fa-github"></i></a>
+                            <a href="#" onclick="showBibtex('bibtexRevoLUT')" title="BibTeX"><i
+                                    class="fa-solid fa-quote-right"></i></a>
+                        </div>
+                    </div>
+                    <p style="font-size: 0.9em">Accepted as a poster at FHE.org 2025 with Z. A. Birba, S. Gambs, M-O.
+                        Killijian and
+                        F.
+                        Larose-Gervais</p>
+                </div>
 
-            <!-- Paginations -->
-            <!-- <div class="pagination_section">
+                <!-- GRAND -->
+                <div class="publication-entry">
+                    <div class="publication-header">
+                        <h4 style="font-size: 1.1em">GRAND : Graph Reconstruction from potential partial Adjacency and
+                            Neighborhood
+                            Data</h4>
+                        <div class="paper-links">
+                            <a href="https://arxiv.org/pdf/2412.02329.pdf" title="PDF"><i
+                                    class="fa-solid fa-file-pdf"></i></a>
+                            <a href="#" onclick="showBibtex('bibtexGRAND')" title="BibTeX"><i
+                                    class="fa-solid fa-quote-right"></i></a>
+                        </div>
+                    </div>
+                    <p style="font-size: 0.9em">Accepted at KDD 2025 with Z. A. Birba, J. Desharnais, M-O. Killijian, S.
+                        Gambs and
+                        N. Tawbi
+                    </p>
+                </div>
+
+                <!-- Poppy-->
+                <div class="publication-entry">
+                    <div class="publication-header">
+                        <h4 style="font-size: 1.1em"> Privacy-Preserving Distributed Spectral Centrality Measures based
+                            on Fully
+                            Homomorphic Encryption (Short Paper)</h4>
+                    </div>
+                    <p style="font-size: 0.9em">BDA 2024 :<a href="https://bda2024.sciencesconf.org"> The 40th
+                            Conference on Data
+                            Management – Principles, Technologies, and Applications</a> with C. Guichemerre, T. Allard,
+                        S. Gambs, M-O.
+                        Killijian and A. El Abbadi
+                    </p>
+                </div>
+
+                <!-- Crypto'Graph -->
+                <div class="publication-entry">
+                    <div class="publication-header">
+                        <h4 style="font-size: 1.1em">Crypto'Graph: Leveraging
+                            Privacy-Preserving Distributed Link Prediction for Robust Graph Learning</h4>
+                        <div class="paper-links">
+                            <a href="https://arxiv.org/pdf/2309.10890v1.pdf" title="PDF"><i
+                                    class="fa-solid fa-file-pdf"></i></a>
+                            <a href="https://github.com/birbaubin/distributed-link-prediction" title="GitHub"><i
+                                    class="fa-brands fa-github"></i></a>
+                            <a href="#" onclick="showBibtex('bibtexCryptoGraph')" title="BibTeX"><i
+                                    class="fa-solid fa-quote-right"></i></a>
+                        </div>
+                    </div>
+                    <p style="font-size: 0.9em">CODASPY 2024 : <a href="https://codaspy2024.org/">The 14th ACM
+                            Conference on Data
+                            and Application Security and Privacy</a>
+                        with Z. A. Birba, S. Gambs and M-O. Killijian</p>
+                </div>
+
+                <!-- OTM -->
+                <div class="publication-entry">
+                    <div class="publication-header">
+                        <h4 style="font-size: 1.1em">Oblivious Turing Machine</h4>
+                        <div class="paper-links">
+                            <a href="https://eprint.iacr.org/2023/1643.pdf" title="PDF"><i
+                                    class="fa-solid fa-file-pdf"></i></a>
+                            <a href="https://github.com/sofianeazogagh/ObliviousTM" title="GitHub"><i
+                                    class="fa-brands fa-github"></i></a>
+                            <a href="#" onclick="showBibtex('bibtexOTM')" title="BibTeX"><i
+                                    class="fa-solid fa-quote-right"></i></a>
+                        </div>
+                    </div>
+                    <p style="font-size: 0.9em">EDCC 2024 : <a href="https://edcc2024.esat.kuleuven.be"> The 19th
+                            European Dependable Computing Conference</a> with V. Defour, and M-O. Killijian
+                        (distinguished paper award
+                        <i class="fa-solid fa-award" style="color: #1c9713; font-size: 1.2em;"></i> )
+                    </p>
+                </div>
+
+                <!-- PROBONITE -->
+                <div class="publication-entry">
+                    <div class="publication-header">
+                        <h4 style="font-size: 1.1em">PROBONITE : Private
+                            One-Branch-Only Non-Interactive
+                            decision Tree Evaluation</h4>
+                        <div class="paper-links">
+                            <a href="https://dl.acm.org/doi/10.1145/3560827.3563377" title="PDF"><i
+                                    class="fa-solid fa-file-pdf"></i></a>
+                            <a href="https://github.com/sofianeazogagh/PROBONITE" title="GitHub"><i
+                                    class="fa-brands fa-github"></i></a>
+                            <a href="#" onclick="showBibtex('bibtexPROBONITE')" title="BibTeX"><i
+                                    class="fa-solid fa-quote-right"></i></a>
+                        </div>
+                    </div>
+                    <p style="font-size: 0.9em">WAHC 2022 : <a
+                            href="https://homomorphicencryption.org/workshops/wahc22/"> The 10th
+                            Workshop on
+                            Encrypted Computing & Applied Homomorphic Cryptography</a>
+                        with V. Delfour, S. Gambs and M-O. Killijian</p>
+
+                    <!-- Master's Thesis -->
+                    <div class="publication-entry">
+                        <div class="publication-header">
+                            <h4 style="font-size: 1.1em">Research and implementation of pairing elliptic
+                                curves (in french)</h4>
+                            <div class="paper-links">
+                                <a href="./elliptic-curve-m2.pdf" title="PDF"><i class="fa-solid fa-file-pdf"></i></a>
+                            </div>
+                        </div>
+                        <p>Master's thesis at Orange Lab, Cesson-Sévigné, France. Under the supervision of R. Clarisse.
+                        </p>
+                    </div>
+                    <!-- Modals -->
+                    <div id="bibtexBlindSort" class="bibtex-modal">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5>BibTeX Citation</h5>
+                                <span class="close">&times;</span>
+                            </div>
+                            <div class="modal-body">
+                                <pre><code>
+        @misc{cryptoeprint:2024/1894,
+        author = {Sofiane Azogagh and Marc-Olivier Killijian and Félix Larose-Gervais},
+        title = {A non-comparison oblivious sort and its application to private k-{NN}},
+        howpublished = {Cryptology {ePrint} Archive, Paper 2024/1894},
+        year = {2024},
+        url = {https://eprint.iacr.org/2024/1894}
+        }
+      </code></pre>
+                                <button class="copy-button" onclick="copyBibtex('bibtexBlindSort')">Copy to
+                                    Clipboard</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="bibtexCryptoGraph" class="bibtex-modal">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5>BibTeX Citation</h5>
+                                <span class="close">&times;</span>
+                            </div>
+                            <div class="modal-body">
+                                <pre><code>
+          @inproceedings{azogagh2024crypto,
+            title={Crypto'Graph: Leveraging Privacy-Preserving Distributed Link Prediction for Robust Graph Learning},
+            author={Azogagh, Sofiane and Birba, Zelma Aubin and Gambs, S{\'e}bastien and Killijian, Marc-Olivier},
+            booktitle={Proceedings of the Fourteenth ACM Conference on Data and Application Security and Privacy},
+            pages={199--210},
+            year={2024}
+          }
+      </code></pre>
+                                <button class="copy-button" onclick="copyBibtex('bibtexCryptoGraph')">Copy to
+                                    Clipboard</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="bibtexOTM" class="bibtex-modal">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5>BibTeX Citation</h5>
+                                <span class="close">&times;</span>
+                            </div>
+                            <div class="modal-body">
+                                <pre><code>
+          @inproceedings{azogagh2024oblivious,
+            title={Oblivious Turing Machine},
+            author={Azogagh, Sofiane and Delfour, Victor and Killijian, Marc-Olivier},
+            booktitle={2024 19th European Dependable Computing Conference (EDCC)},
+            pages={17--24},
+            year={2024},
+            organization={IEEE}
+          }
+      </code></pre>
+                                <button class="copy-button" onclick="copyBibtex('bibtexOTM')">Copy to Clipboard</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="bibtexPROBONITE" class="bibtex-modal">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5>BibTeX Citation</h5>
+                                <span class="close">&times;</span>
+                            </div>
+                            <div class="modal-body">
+                                <pre><code>
+          @inproceedings{azogagh2022probonite,
+            title={Probonite: Private one-branch-only non-interactive decision tree evaluation},
+            author={Azogagh, Sofiane and Delfour, Victor and Gambs, S{\'e}bastien and Killijian, Marc-Olivier},
+            booktitle={Proceedings of the 10th Workshop on Encrypted Computing \& Applied Homomorphic Cryptography},
+            pages={23--33},
+            year={2022}
+          }
+      </code></pre>
+                                <button class="copy-button" onclick="copyBibtex('bibtexPROBONITE')">Copy to
+                                    Clipboard</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="bibtexRevoLUT" class="bibtex-modal">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5>BibTeX Citation</h5>
+                                <span class="close">&times;</span>
+                            </div>
+                            <div class="modal-body">
+                                <pre><code>
+          @misc{cryptoeprint:2024/1935,
+            author = {Sofiane Azogagh and Zelma Aubin Birba and Marc-Olivier Killijian and Félix Larose-Gervais},
+            title = {{RevoLUT} : Rust Efficient Versatile Oblivious Look-Up-Tables},
+            howpublished = {Cryptology {ePrint} Archive, Paper 2024/1935},
+            year = {2024},
+            url = {https://eprint.iacr.org/2024/1935}
+          }
+      </code></pre>
+                                <button class="copy-button" onclick="copyBibtex('bibtexRevoLUT')">Copy to
+                                    Clipboard</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="bibtexGRAND" class="bibtex-modal">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5>BibTeX Citation</h5>
+                                <span class="close">&times;</span>
+                            </div>
+                            <div class="modal-body">
+                                <pre><code>
+          @article{azogagh2024grand,
+            title={GRAND: Graph Reconstruction from potential partial Adjacency and Neighborhood Data},
+            author={Azogagh, Sofiane and Birba, Zelma Aubin and Desharnais, Jos{\'e}e and Killijian, Marc-Olivier and Gambs, S{\'e}bastien and Tawbi, Nadia},
+            journal={arXiv preprint arXiv:2412.02329},
+            year={2024}
+          }
+      </code></pre>
+                                <button class="copy-button" onclick="copyBibtex('bibtexGRAND')">Copy to
+                                    Clipboard</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Modals -->
+
+                </div>
+
+                <!-- Paginations -->
+                <!-- <div class="pagination_section">
                 <a href="#" title="Title1">1</a>
                 <a href="#" title="Title2">2</a>
             </div> -->
-        </div>
+            </div>
 
+            <div class="section" id="teaching">
+                <h1>Teaching</h1>
+                <hr>
+                <h3 style="font-size: 1.1em">2023-2024 : Lecturer (Université du Québec à Montréal)</h3>
+                <ul>
+                    <li> Undergraduate courses, Department of Computer Science</li>
+                    <ul>
+                        <li>Mathematics for computer science <a
+                                href="https://etudier.uqam.ca/cours?sigle=INF1132">(INF1132)</a></li>
+                    </ul>
+                </ul>
+                <h3 style="font-size: 1.1em">2022-2023 : Teaching Assistant (Université du Québec à Montréal)</h3>
+                <ul>
+                    <li> Undergraduate courses, Department of Computer Science</li>
+                    <ul>
+                        <li>Lab Sessions - Introduction to IT security <a
+                                href="https://etudier.uqam.ca/cours?sigle=INF1132">(INF4471)</a></li>
+                        <li>Lab Sessions - Mathematics for computer science <a
+                                href="https://etudier.uqam.ca/cours?sigle=INF1132">(INF1132)</a></li>
+                        <li>Marker - Mathematics for computer science <a
+                                href="https://etudier.uqam.ca/cours?sigle=INF1132">(INF1132)</a></li>
+                    </ul>
+                    <li> Undergraduate courses, Department of Mathematics</li>
+                    <ul>
+                        <li>Lab Sessions - Differential & Integral Calculus I <a
+                                href="https://etudier.uqam.ca/cours?sigle=MAT0341">(MAT0341)</a></li>
+                    </ul>
+                </ul>
+                <h3 style="font-size: 1.1em">2021-2022 : Teaching Assistant (Université du Québec à Montréal)</h3>
+                <ul>
+                    <li> Undergraduate courses, Department of Computer Science</li>
+                    <ul>
+                        <li>Marker - Introduction to IT security <a
+                                href="https://etudier.uqam.ca/cours?sigle=INF4471">(INF4471)</a>
+                        </li>
+                    </ul>
+                    <li> Graduate courses, Department of Computer Science</li>
+                    <ul>
+                        <li>Lab Sessions - Security of IT systems <a
+                                href="https://etudier.uqam.ca/cours?sigle=INF8750">(INF8750)</a>
+                        </li>
+                    </ul>
+                </ul>
+            </div>
+
+            <div class="section" id="talks">
+                <h1>Talks</h1>
+                <hr>
+                <div class="posts">
+                    <!-- <h3>Post</h3> -->
+                    <p>Currently in construction.</p>
+                </div>
+            </div>
+
+            <div class="section" id="blog">
+                <h1>Blog Posts</h1>
+                <hr>
+                <div class="posts">
+                    <h3>Post</h3>
+                    <p>Currently in construction.</p>
+                </div>
+            </div>
     </main>
 
+    <button id="scrollToTopBtn" title="Remonter en haut">↑</button>
+
+    <script>
+        const toggleBtn = document.getElementById('toggleDarkMode');
+
+        toggleBtn.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+
+            // Sauvegarder le choix dans le localStorage
+            if (document.body.classList.contains('dark-mode')) {
+                localStorage.setItem('mode', 'dark');
+            } else {
+                localStorage.setItem('mode', 'light');
+            }
+        });
+
+        // Appliquer le dark mode si activé précédemment
+        window.addEventListener('DOMContentLoaded', () => {
+            if (localStorage.getItem('mode') === 'dark') {
+                document.body.classList.add('dark-mode');
+            }
+        });
+    </script>
 
 
     <footer class="bg-light text-center text-lg-start">
@@ -84,6 +485,41 @@
 
 
     <!-- Scripts -->
+    <!-- Scripts -->
+    <script src="https://kit.fontawesome.com/785dd546fc.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+        integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+        crossorigin="anonymous"></script>
+
+    <script>
+        function showBibtex(modalId) {
+            const modal = document.getElementById(modalId);
+            modal.style.display = "block";
+
+            const span = modal.getElementsByClassName("close")[0];
+            span.onclick = function () {
+                modal.style.display = "none";
+            }
+
+            window.onclick = function (event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        }
+
+        function copyBibtex(modalId) {
+            const modal = document.getElementById(modalId);
+            const text = modal.querySelector('pre code').textContent;
+            navigator.clipboard.writeText(text).then(() => {
+                const button = modal.querySelector('.copy-button');
+                button.textContent = 'Copied!';
+                setTimeout(() => {
+                    button.textContent = 'Copy to Clipboard';
+                }, 2000);
+            });
+        }
+    </script>
     <script src="https://kit.fontawesome.com/785dd546fc.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
         integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
@@ -96,6 +532,27 @@
                 document.querySelector('main').insertAdjacentHTML('afterbegin', data);
             });
     </script>
+    <script>
+        const scrollBtn = document.getElementById("scrollToTopBtn");
+
+        // Affiche le bouton après avoir scrollé de 100px
+        window.onscroll = function () {
+            if (document.documentElement.scrollTop > 100) {
+                scrollBtn.style.display = "block";
+            } else {
+                scrollBtn.style.display = "none";
+            }
+        };
+
+        // Scroll vers le haut au clic
+        scrollBtn.addEventListener("click", function () {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
+    </script>
+
 </body>
 
 </html>
