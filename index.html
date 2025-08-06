@@ -144,7 +144,7 @@
                                     class="fa-solid fa-quote-right"></i></a>
                         </div>
                     </div>
-                    <p style="font-size: 0.9em">Accepted as a poster at FHE.org 2025 with Z. A. Birba, S. Gambs, M-O.
+                    <p style="font-size: 0.9em">Poster at FHE.org 2025 with Z. A. Birba, S. Gambs, M-O.
                         Killijian and
                         F.
                         Larose-Gervais</p>
@@ -157,15 +157,15 @@
                             Neighborhood
                             Data</h4>
                         <div class="paper-links">
-                            <a href="https://arxiv.org/pdf/2412.02329.pdf" title="PDF"><i
+                            <a href="https://dl.acm.org/doi/pdf/10.1145/3711896.3736988" title="PDF"><i
                                     class="fa-solid fa-file-pdf"></i></a>
                             <a href="#" onclick="showBibtex('bibtexGRAND')" title="BibTeX"><i
                                     class="fa-solid fa-quote-right"></i></a>
                         </div>
                     </div>
-                    <p style="font-size: 0.9em">Accepted at KDD 2025 with Z. A. Birba, J. Desharnais, M-O. Killijian, S.
-                        Gambs and
-                        N. Tawbi
+                    <p style="font-size: 0.9em">KDD 2025 : <a href="https://kdd2025.kdd.org">KDD '25: Proceedings of the
+                            31st ACM SIGKDD Conference on Knowledge Discovery and Data Mining</a> with Z. A. Birba, J.
+                        Desharnais, M-O. Killijian, S.Gambs and N. Tawbi
                     </p>
                 </div>
 
@@ -173,8 +173,7 @@
                 <div class="publication-entry">
                     <div class="publication-header">
                         <h4 style="font-size: 1.1em"> Privacy-Preserving Distributed Spectral Centrality Measures based
-                            on Fully
-                            Homomorphic Encryption (Short Paper)</h4>
+                            on Fully Homomorphic Encryption (Short Paper)</h4>
                     </div>
                     <p style="font-size: 0.9em">BDA 2024 :<a href="https://bda2024.sciencesconf.org"> The 40th
                             Conference on Data
@@ -376,12 +375,23 @@
                             </div>
                             <div class="modal-body">
                                 <pre><code>
-          @article{azogagh2024grand,
-            title={GRAND: Graph Reconstruction from potential partial Adjacency and Neighborhood Data},
-            author={Azogagh, Sofiane and Birba, Zelma Aubin and Desharnais, Jos{\'e}e and Killijian, Marc-Olivier and Gambs, S{\'e}bastien and Tawbi, Nadia},
-            journal={arXiv preprint arXiv:2412.02329},
-            year={2024}
-          }
+                                    @inproceedings{10.1145/3711896.3736988,
+                                        author = {Azogagh, Sofiane and Birba, Zelma Aubin and Desharnais, Jos\'{e}e and Gambs, S\'{e}bastien and Killijian, Marc-Olivier and Tawbi, Nadia},
+                                        title = {GRAND : Graph Reconstruction from Potential Partial Adjacency and Neighborhood Data},
+                                        year = {2025},
+                                        isbn = {9798400714542},
+                                        publisher = {Association for Computing Machinery},
+                                        address = {New York, NY, USA},
+                                        url = {https://doi.org/10.1145/3711896.3736988},
+                                        doi = {10.1145/3711896.3736988},
+                                        abstract = {Cryptographic approaches, such as secure multiparty computation, can be used to securely compute a function of a distributed graph without centralizing the data of each participant. However, the output of the protocol can leak sensitive information about the structure of the original graph. In particular, we propose an approach by which an adversary observing the result of a private protocol for the computation of the number of common neighbors between all pairs of vertices, can reconstruct the adjacency matrix of the graph. In fact, this can only be done up to co-squareness, a notion we introduce, as two different graphs can have the same matrix of common neighbors. To realize this, we consider two adversary models, one who observes the common neighbors matrix only and a more informed one that has partial knowledge of the original graph. Our results demonstrate that, from their common neighbors matrix, graphs can be reconstructed with high accuracy (up to co-squareness). The proposed reconstruction is also interesting in itself from the point of view of graph theory.},
+                                        booktitle = {Proceedings of the 31st ACM SIGKDD Conference on Knowledge Discovery and Data Mining V.2},
+                                        pages = {47–58},
+                                        numpages = {12},
+                                        keywords = {common neighbor matrix, edge prediction, graph reconstruction, private computing},
+                                        location = {Toronto ON, Canada},
+                                        series = {KDD '25}
+                                        }
       </code></pre>
                                 <button class="copy-button" onclick="copyBibtex('bibtexGRAND')">Copy to
                                     Clipboard</button>
@@ -445,8 +455,14 @@
             </div>
 
             <div class="section" id="talks">
-                <h1>Talks</h1>
+                <h1>Talks and posters</h1>
                 <hr>
+                <div class="posts">
+                    <h3 style="font-size: 1.1em">Oblivious (Un)Learning of Extremely Decision Trees
+                    </h3>
+                    <p><a href="./posters/Poster_RAI_KDD25.pdf" title="PDF">Poster presented for Responsible AI day at
+                            KDD 2025 <i class="fa-solid fa-file-pdf"></i></a></p>
+                </div>
                 <div class="posts">
                     <h3 style="font-size: 1.1em">A non-comparison oblivious sort and its application to private k-NN
                     </h3>
@@ -455,8 +471,19 @@
                 </div>
                 <div class="posts">
                     <h3 style="font-size: 1.1em">RevoLUT : Rust Efficient Versatile Oblivious Look-Up-Tables</h3>
-                    <p><a href="./slides/RevoLUT_APVP_25.pdf" title="PDF">Slides presented at
-                            APVP 2025 and Forum MobiliT.AI 2024 <i class="fa-solid fa-file-pdf"></i></a></p>
+                    <ul>
+                        <li><a href="./slides/RevoLUT_APVP_25.pdf" title="PDF">Slides presented at APVP 2025 and Forum
+                                MobiliT.AI 2024 <i class="fa-solid fa-file-pdf"></i></a></li>
+                        <li><a href="./posters/Poster_FHE25.pdf" title="PDF">Poster presented at FHE.org 2025 <i
+                                    class="fa-solid fa-file-pdf"></i></a></li>
+                    </ul>
+                </div>
+                <div class="posts">
+                    <h3 style="font-size: 1.1em">Towards end-to-end trustworthy Machine Learning with Homomorphic
+                        Encryption
+                    </h3>
+                    <p><a href="./posters/Poster_MobiliTAI23_Azogagh_Sofiane.pdf" title="PDF">Poster <i
+                                class="fa-solid fa-file-pdf"></i></a></p>
                 </div>
                 <div class="posts">
                     <h3 style="font-size: 1.1em">PROBONITE : Private One-Branch-Only Non-Interactive decision Tree
