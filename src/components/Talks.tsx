@@ -1,4 +1,5 @@
 import talks from "@content/talks.json";
+import { richText } from "@/lib/richText";
 import { SlidesIcon, PosterIcon, PdfIcon, LocationIcon } from "./Icons";
 
 export default function Talks() {
@@ -39,7 +40,7 @@ export default function Talks() {
                             {talk.type === "talk" ? <SlidesIcon className="w-3 h-3" /> : <PosterIcon className="w-3 h-3" />}
                             {talk.type === "talk" ? "Talk" : "Poster"}
                           </span>
-                          <span className="text-xs text-zinc-500 dark:text-zinc-400">{talk.event}</span>
+                          <span className="text-xs text-zinc-500 dark:text-zinc-400">{richText(talk.event)}</span>
                         </div>
                         {"location" in talk && talk.location && (
                           <p className="flex items-center gap-1 text-xs text-zinc-400 dark:text-zinc-500 mb-1">
