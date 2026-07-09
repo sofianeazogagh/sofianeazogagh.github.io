@@ -1,0 +1,65 @@
+[
+  {
+    "title": "Understanding Prompt Injection Attacks on LLMs",
+    "type": "talk",
+    "event": "GA Meeting of the [TRUMAN Project](https://truman-horizon.eu)",
+    "location": "Larnaca, Cyprus",
+    "year": 2026
+  },
+  {
+    "title": "Oblivious (Un)Learning of Extremely Randomized Trees",
+    "type": "talk",
+    "event": "SATML 2026",
+    "location": "Munich, Germany",
+    "year": 2026,
+    "file": "/slides/Oblivious_unlearning_ERTs_SATML.pdf"
+  },
+  {
+    "title": "Smart and Blind : Secure AI on encrypted data",
+    "type": "poster",
+    "event": "Responsible AI Day @ KDD 2025",
+    "location": "Toronto, Canada",
+    "year": 2025,
+    "file": "/posters/Poster_RAI_KDD25.pdf"
+  },
+  {
+    "title": "A Non-Comparison Oblivious Sort and Its Application to Private k-NN",
+    "type": "talk",
+    "event": "PETS 2025 · SoSySec 2025 · APVP 2025",
+    "location": "Washington, DC, USA · Rennes, France · Poitiers, France",
+    "year": 2025,
+    "file": "/slides/Blind_Sort_PETs.pdf"
+  },
+  {
+    "title": "RevoLUT: Rust Efficient Versatile Oblivious Look-Up-Tables",
+    "type": "poster",
+    "event": "FHE.org 2025",
+    "location": "Sofia, Bulgaria",
+    "year": 2025,
+    "file": "/posters/Poster_FHE25_RevoLUT.pdf"
+  },
+  {
+    "title": "RevoLUT: Rust Efficient Versatile Oblivious Look-Up-Tables",
+    "type": "talk",
+    "event": "APVP 2025 · Forum MobiliT.AI 2024",
+    "location": "Rennes, France · Montreal, Canada",
+    "year": 2025,
+    "file": "/slides/RevoLUT_APVP_25.pdf"
+  },
+  {
+    "title": "Towards End-to-End Trustworthy Machine Learning with Homomorphic Encryption",
+    "type": "poster",
+    "event": "Forum MobiliT.AI 2023",
+    "location": "Toulouse, France",
+    "year": 2023,
+    "file": "/posters/Poster_MobiliTAI23_Azogagh_Sofiane.pdf"
+  },
+  {
+    "title": "PROBONITE: Private One-Branch-Only Non-Interactive Decision Tree Evaluation",
+    "type": "talk",
+    "event": "WAHC 2022",
+    "location": "Los Angeles, USA",
+    "year": 2022,
+    "file": "/slides/PROBONITE_WAHC.pdf"
+  }
+]

@@ -1,0 +1,206 @@
+[
+  {
+    "id": "poppy",
+    "title": "POPPY: Scalable and Secure Spectral Centrality for Distributed Graphs via Homomorphic Encryption",
+    "authors": [
+      "Sofiane Azogagh",
+      "Claire Guichemerre",
+      "Tristan Allard",
+      "Sébastien Gambs",
+      "Marc-Olivier Killijian",
+      "Amr El Abbadi"
+    ],
+    "venue": "Proceedings on Privacy Enhancing Technologies (PoPETs) 2026",
+    "venueUrl": "https://petsymposium.org/2026/",
+    "year": 2026,
+    "status": "published",
+    "tags": [
+      "Homomorphic Encryption",
+      "Graph Privacy",
+      "Spectral Centrality",
+      "Orbits",
+      "Distributed Computing"
+    ],
+    "pdf": null,
+    "github": null,
+    "bibtex": null,
+    "award": null
+  },
+  {
+    "id": "oblivious-erts",
+    "title": "Oblivious (Un)Learning of Extremely Randomized Trees",
+    "authors": [
+      "Sofiane Azogagh",
+      "Zelma Aubin Birba",
+      "Sébastien Gambs",
+      "Marc-Olivier Killijian"
+    ],
+    "venue": "SATML 2026",
+    "venueUrl": "https://satml.org/2026/",
+    "year": 2026,
+    "status": "published",
+    "tags": [
+      "Homomorphic Encryption",
+      "Machine Unlearning",
+      "Decision Trees"
+    ],
+    "pdf": "/pdfs/Oblivious_Extremely_Randomized_Trees.pdf",
+    "github": "https://github.com/sofianeazogagh/oblivious_unlearning",
+    "bibtex": null
+  },
+  {
+    "id": "blind-sort",
+    "title": "A Non-Comparison Oblivious Sort and Its Application to Private k-NN",
+    "authors": [
+      "Sofiane Azogagh",
+      "Marc-Olivier Killijian",
+      "Félix Larose-Gervais"
+    ],
+    "venue": "Proceedings on Privacy Enhancing Technologies (PoPETs)",
+    "venueUrl": "https://petsymposium.org/popets/2025/",
+    "year": 2025,
+    "status": "published",
+    "tags": [
+      "Homomorphic Encryption",
+      "Oblivious Algorithms",
+      "k-NN"
+    ],
+    "pdf": "https://petsymposium.org/popets/2025/popets-2025-0093.pdf",
+    "github": "https://github.com/sofianeazogagh/knn",
+    "bibtex": "@misc{cryptoeprint:2024/1894,\n  author = {Sofiane Azogagh and Marc-Olivier Killijian and Félix Larose-Gervais},\n  title = {A non-comparison oblivious sort and its application to private k-{NN}},\n  howpublished = {Cryptology {ePrint} Archive, Paper 2024/1894},\n  year = {2024},\n  url = {https://eprint.iacr.org/2024/1894}\n}",
+    "award": null
+  },
+  {
+    "id": "grand",
+    "title": "GRAND: Graph Reconstruction from Potential Partial Adjacency and Neighborhood Data",
+    "authors": [
+      "Sofiane Azogagh",
+      "Zelma Aubin Birba",
+      "Josée Desharnais",
+      "Sébastien Gambs",
+      "Marc-Olivier Killijian",
+      "Nadia Tawbi"
+    ],
+    "venue": "KDD '25 — 31st ACM SIGKDD Conference on Knowledge Discovery and Data Mining",
+    "venueUrl": "https://kdd2025.kdd.org",
+    "year": 2025,
+    "status": "published",
+    "tags": [
+      "Graph Privacy",
+      "Graph Reconstruction",
+      "Private Computing"
+    ],
+    "pdf": "https://dl.acm.org/doi/pdf/10.1145/3711896.3736988",
+    "github": null,
+    "bibtex": "@inproceedings{10.1145/3711896.3736988,\n  author = {Azogagh, Sofiane and Birba, Zelma Aubin and Desharnais, Jos\\'{e}e and Gambs, S\\'{e}bastien and Killijian, Marc-Olivier and Tawbi, Nadia},\n  title = {GRAND : Graph Reconstruction from Potential Partial Adjacency and Neighborhood Data},\n  year = {2025},\n  isbn = {9798400714542},\n  publisher = {Association for Computing Machinery},\n  address = {New York, NY, USA},\n  url = {https://doi.org/10.1145/3711896.3736988},\n  doi = {10.1145/3711896.3736988},\n  booktitle = {Proceedings of the 31st ACM SIGKDD Conference on Knowledge Discovery and Data Mining V.2},\n  pages = {47--58},\n  numpages = {12},\n  keywords = {common neighbor matrix, edge prediction, graph reconstruction, private computing},\n  location = {Toronto ON, Canada},\n  series = {KDD '25}\n}",
+    "award": null
+  },
+  {
+    "id": "revolut",
+    "title": "RevoLUT: Rust Efficient Versatile Oblivious Look-Up-Tables",
+    "authors": [
+      "Sofiane Azogagh",
+      "Zelma Aubin Birba",
+      "Sébastien Gambs",
+      "Marc-Olivier Killijian",
+      "Félix Larose-Gervais"
+    ],
+    "venue": "Poster at FHE.org",
+    "venueUrl": "https://fhe.org",
+    "year": 2025,
+    "status": "preprint",
+    "tags": [
+      "Homomorphic Encryption",
+      "Rust",
+      "Look-Up Tables"
+    ],
+    "pdf": "https://eprint.iacr.org/2024/1935.pdf",
+    "github": "https://github.com/sofianeazogagh/revoLUT",
+    "bibtex": "@misc{cryptoeprint:2024/1935,\n  author = {Sofiane Azogagh and Zelma Aubin Birba and Marc-Olivier Killijian and Félix Larose-Gervais},\n  title = {{RevoLUT} : Rust Efficient Versatile Oblivious Look-Up-Tables},\n  howpublished = {Cryptology {ePrint} Archive, Paper 2024/1935},\n  year = {2024},\n  url = {https://eprint.iacr.org/2024/1935}\n}",
+    "award": null
+  },
+  {
+    "id": "cryptograph",
+    "title": "Crypto'Graph: Leveraging Privacy-Preserving Distributed Link Prediction for Robust Graph Learning",
+    "authors": [
+      "Sofiane Azogagh",
+      "Zelma Aubin Birba",
+      "Sébastien Gambs",
+      "Marc-Olivier Killijian"
+    ],
+    "venue": "CODASPY 2024 — 14th ACM Conference on Data and Application Security and Privacy",
+    "venueUrl": "https://codaspy2024.org/",
+    "year": 2024,
+    "status": "published",
+    "tags": [
+      "Graph Privacy",
+      "Link Prediction",
+      "Secure Computation"
+    ],
+    "pdf": "https://arxiv.org/pdf/2309.10890v1.pdf",
+    "github": "https://github.com/birbaubin/distributed-link-prediction",
+    "bibtex": "@inproceedings{azogagh2024crypto,\n  title={Crypto'Graph: Leveraging Privacy-Preserving Distributed Link Prediction for Robust Graph Learning},\n  author={Azogagh, Sofiane and Birba, Zelma Aubin and Gambs, S{\\'e}bastien and Killijian, Marc-Olivier},\n  booktitle={Proceedings of the Fourteenth ACM Conference on Data and Application Security and Privacy},\n  pages={199--210},\n  year={2024}\n}",
+    "award": null
+  },
+  {
+    "id": "oblivious-turing-machine",
+    "title": "Oblivious Turing Machine",
+    "authors": [
+      "Sofiane Azogagh",
+      "Victor Delfour",
+      "Marc-Olivier Killijian"
+    ],
+    "venue": "EDCC 2024 — 19th European Dependable Computing Conference",
+    "venueUrl": "https://edcc2024.esat.kuleuven.be",
+    "year": 2024,
+    "status": "published",
+    "tags": [
+      "Homomorphic Encryption",
+      "Oblivious Computation"
+    ],
+    "pdf": "https://eprint.iacr.org/2023/1643.pdf",
+    "github": "https://github.com/sofianeazogagh/ObliviousTM",
+    "bibtex": "@inproceedings{azogagh2024oblivious,\n  title={Oblivious Turing Machine},\n  author={Azogagh, Sofiane and Delfour, Victor and Killijian, Marc-Olivier},\n  booktitle={2024 19th European Dependable Computing Conference (EDCC)},\n  pages={17--24},\n  year={2024},\n  organization={IEEE}\n}",
+    "award": "Distinguished Paper Award"
+  },
+  {
+    "id": "probonite",
+    "title": "PROBONITE: Private One-Branch-Only Non-Interactive Decision Tree Evaluation",
+    "authors": [
+      "Sofiane Azogagh",
+      "Victor Delfour",
+      "Sébastien Gambs",
+      "Marc-Olivier Killijian"
+    ],
+    "venue": "WAHC 2022 — 10th Workshop on Encrypted Computing & Applied Homomorphic Cryptography",
+    "venueUrl": "https://homomorphicencryption.org/workshops/wahc22/",
+    "year": 2022,
+    "status": "published",
+    "tags": [
+      "Homomorphic Encryption",
+      "Decision Trees"
+    ],
+    "pdf": "https://dl.acm.org/doi/10.1145/3560827.3563377",
+    "github": "https://github.com/sofianeazogagh/PROBONITE",
+    "bibtex": "@inproceedings{azogagh2022probonite,\n  title={Probonite: Private one-branch-only non-interactive decision tree evaluation},\n  author={Azogagh, Sofiane and Delfour, Victor and Gambs, S{\\'e}bastien and Killijian, Marc-Olivier},\n  booktitle={Proceedings of the 10th Workshop on Encrypted Computing \\& Applied Homomorphic Cryptography},\n  pages={23--33},\n  year={2022}\n}",
+    "award": null
+  },
+  {
+    "id": "masters-thesis",
+    "title": "Research and Implementation of Pairing Elliptic Curves (in French)",
+    "authors": [
+      "Sofiane Azogagh"
+    ],
+    "venue": "Master's thesis — Orange Labs, Cesson-Sévigné, France (supervised by R. Clarisse)",
+    "year": 2021,
+    "status": "thesis",
+    "tags": [
+      "Elliptic Curves",
+      "Pairings"
+    ],
+    "pdf": "/pdfs/elliptic-curve-m2.pdf",
+    "github": null,
+    "bibtex": null,
+    "award": null
+  }
+]

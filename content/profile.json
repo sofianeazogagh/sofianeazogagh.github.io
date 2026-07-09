@@ -1,0 +1,26 @@
+{
+  "name": "Sofiane Azogagh",
+  "title": "Postdoctoral Researcher",
+  "affiliation": "EURECOM",
+  "location": "Sophia Antipolis, France",
+  "tagline": "Security · Applied Cryptography · Machine Learning",
+  "about": [
+    "I am a Postdoctoral Researcher at EURECOM, working with [Melek Önen](http://www.eurecom.fr/en/people/onen-melek) on security and privacy in the context of Machine Learning. My current research centers on prompt injection attacks and defenses for LLMs, alongside a range of privacy-enhancing technologies such as Federated Learning, Homomorphic Encryption, and Private Set Intersection.",
+    "In 2026, I completed my PhD at Université du Québec à Montréal (UQÀM) under the supervision of [Marc-Olivier Killijian](https://kirija.github.io) and [Sébastien Gambs](https://sebastiengambs.openum.ca/team/). My thesis focused on the design of oblivious algorithms on encrypted data using homomorphic encryption to enhance data privacy in machine learning. I also worked on privacy-preserving graph analysis (PageRank, Common Neighbors, etc.)."
+  ],
+  "interests": [
+    "LLM security and privacy",
+    "Homomorphic Encryption",
+    "Privacy-Preserving Machine Learning",
+    "Federated Learning",
+    "Secure Multiparty Computation",
+    "Graph Privacy",
+    "Data Valuation"
+  ],
+  "social": {
+    "email": "sofiane.azogagh@eurecom.fr",
+    "github": "https://github.com/sofianeazogagh",
+    "linkedin": "https://www.linkedin.com/in/sofiane-azogagh-5332651b8/",
+    "scholar": "https://scholar.google.com/citations?user=RV_HmsEAAAAJ&hl=fr"
+  }
+}

@@ -1,0 +1,51 @@
+[
+  {
+    "period": "2024 – 2026",
+    "role": "Lecturer",
+    "institution": "Université du Québec à Montréal",
+    "courses": [
+      {
+        "name": "Mathematics for Computer Science",
+        "code": "INF1132",
+        "url": "https://etudier.uqam.ca/cours?sigle=INF1132",
+        "duty": "Summer 2024 (Remote, 45h), Winter 2025 (In-person, 45h), Fall 2025 (Remote, 45h)",
+        "level": "Undergraduate · Computer Science"
+      }
+    ]
+  },
+  {
+    "period": "2021 – 2023",
+    "role": "Teaching Assistant",
+    "institution": "Université du Québec à Montréal",
+    "courses": [
+      {
+        "name": "Security of IT Systems",
+        "code": "INF8750",
+        "url": "https://etudier.uqam.ca/cours?sigle=INF8750",
+        "duty": "Lab Sessions",
+        "level": "Graduate · Computer Science"
+      },
+      {
+        "name": "Introduction to IT Security",
+        "code": "INF4471",
+        "url": "https://etudier.uqam.ca/cours?sigle=INF4471",
+        "duty": "Lab Sessions (2022–2023), Marking (2021–2022)",
+        "level": "Undergraduate · Computer Science"
+      },
+      {
+        "name": "Mathematics for Computer Science",
+        "code": "INF1132",
+        "url": "https://etudier.uqam.ca/cours?sigle=INF1132",
+        "duty": "Lab Sessions & Marking",
+        "level": "Undergraduate · Computer Science"
+      },
+      {
+        "name": "Differential & Integral Calculus I",
+        "code": "MAT0341",
+        "url": "https://etudier.uqam.ca/cours?sigle=MAT0341",
+        "duty": "Lab Sessions",
+        "level": "Undergraduate · Mathematics"
+      }
+    ]
+  }
+]

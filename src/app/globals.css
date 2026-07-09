@@ -1,0 +1,117 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Fonts reference next/font variables (set on <body>), so they must be inlined
+   at the usage site rather than resolved at :root */
+@theme inline {
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-fraunces), Georgia, serif;
+  --font-mono: var(--font-jetbrains), ui-monospace, monospace;
+}
+
+@theme {
+  --color-accent-50: #eef4ff;
+  --color-accent-100: #dce7fd;
+  --color-accent-200: #c1d4fc;
+  --color-accent-300: #96b8fa;
+  --color-accent-400: #6491f5;
+  --color-accent-500: #406aef;
+  --color-accent-600: #2b49e3;
+  --color-accent-700: #2237d1;
+  --color-accent-800: #222fa9;
+  --color-accent-900: #212d85;
+
+  --color-paper: #faf9f7;
+  --color-ink: #1a1c22;
+  --color-night: #0d1017;
+  --color-night-soft: #151923;
+
+  --animate-fade-up: fade-up 0.6s ease-out both;
+
+  @keyframes fade-up {
+    from {
+      opacity: 0;
+      transform: translateY(16px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+body {
+  @apply bg-paper text-ink antialiased;
+}
+
+.dark body {
+  @apply bg-night text-zinc-200;
+}
+
+/* Reveal-on-scroll (activated by the Reveal component) */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+/* Blog prose styling */
+.prose-blog {
+  @apply text-[1.05rem] leading-relaxed;
+}
+.prose-blog h2 {
+  @apply font-display text-2xl font-semibold mt-10 mb-4;
+}
+.prose-blog h3 {
+  @apply font-display text-xl font-semibold mt-8 mb-3;
+}
+.prose-blog p {
+  @apply my-4;
+}
+.prose-blog a {
+  @apply text-accent-600 dark:text-accent-400 underline decoration-accent-300 dark:decoration-accent-700 underline-offset-4 hover:decoration-2;
+}
+.prose-blog ul,
+.prose-blog ol {
+  @apply my-4 pl-6 space-y-2;
+}
+.prose-blog ul {
+  @apply list-disc;
+}
+.prose-blog ol {
+  @apply list-decimal;
+}
+.prose-blog blockquote {
+  @apply border-l-4 border-accent-300 dark:border-accent-700 pl-4 italic my-6 text-zinc-600 dark:text-zinc-400;
+}
+.prose-blog pre {
+  @apply bg-zinc-900 dark:bg-night-soft text-zinc-100 rounded-xl p-4 my-6 overflow-x-auto text-sm font-mono border border-zinc-800;
+}
+.prose-blog :not(pre) > code {
+  @apply font-mono text-[0.9em] bg-zinc-100 dark:bg-zinc-800 rounded px-1.5 py-0.5;
+}
+.prose-blog em {
+  @apply italic;
+}
