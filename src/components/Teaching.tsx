@@ -4,7 +4,7 @@ export default function Teaching() {
   return (
     <div className="relative">
       {/* Timeline spine */}
-      <div className="absolute left-[7px] top-2 bottom-2 w-px bg-zinc-200 dark:bg-zinc-800" aria-hidden />
+      <div className="absolute left-[6px] top-2 bottom-2 w-[3px] rounded-full bg-zinc-200 dark:bg-zinc-800" aria-hidden />
 
       <div className="space-y-10">
         {teaching.map((entry) => (

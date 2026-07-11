@@ -11,21 +11,35 @@
 }
 
 @theme {
-  --color-accent-50: #eef4ff;
-  --color-accent-100: #dce7fd;
-  --color-accent-200: #c1d4fc;
-  --color-accent-300: #96b8fa;
-  --color-accent-400: #6491f5;
-  --color-accent-500: #406aef;
-  --color-accent-600: #2b49e3;
-  --color-accent-700: #2237d1;
-  --color-accent-800: #222fa9;
-  --color-accent-900: #212d85;
+  /* "Spice" accent — burnt orange / amber, à la Dune */
+  --color-accent-50: #fdf5eb;
+  --color-accent-100: #f9e7cd;
+  --color-accent-200: #f2d09c;
+  --color-accent-300: #e9b165;
+  --color-accent-400: #df8f3a;
+  --color-accent-500: #d17422;
+  --color-accent-600: #b95a1a;
+  --color-accent-700: #984318;
+  --color-accent-800: #7c361a;
+  --color-accent-900: #662e18;
 
-  --color-paper: #faf9f7;
-  --color-ink: #1a1c22;
-  --color-night: #0d1017;
-  --color-night-soft: #151923;
+  /* Warm sand-stone neutrals replacing Tailwind's cool zinc scale */
+  --color-zinc-50: #faf6ee;
+  --color-zinc-100: #f1eadc;
+  --color-zinc-200: #e4d9c4;
+  --color-zinc-300: #cfc0a4;
+  --color-zinc-400: #a6947a;
+  --color-zinc-500: #877659;
+  --color-zinc-600: #6d5d45;
+  --color-zinc-700: #564936;
+  --color-zinc-800: #3a3128;
+  --color-zinc-900: #29221b;
+  --color-zinc-950: #171310;
+
+  --color-paper: #f7f1e6;
+  --color-ink: #2a2118;
+  --color-night: #151009;
+  --color-night-soft: #201812;
 
   --animate-fade-up: fade-up 0.6s ease-out both;
 
@@ -46,12 +60,36 @@ html {
   scroll-padding-top: 5rem;
 }
 
+/* Zellige interlace: eight-pointed stars on a checkerboard lattice, joined by
+   diagonals crossing in X's and woven pinwheel meanders (Alhambra-style).
+   The pattern lives on body::before (behind the content) so it can be blurred
+   without affecting the page itself. */
 body {
   @apply bg-paper text-ink antialiased;
+  position: relative;
+  background-image: radial-gradient(ellipse 120% 60% at 50% -10%, #fbe9cf 0%, transparent 60%);
+  background-repeat: no-repeat;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  filter: blur(2px);
+  background-repeat: repeat;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cg fill='none' stroke='%23984318' stroke-opacity='0.11' stroke-width='1.5'%3E%3Crect x='93' y='93' width='54' height='54'/%3E%3Crect x='93' y='93' width='54' height='54' transform='rotate(45 120 120)'/%3E%3Crect x='-27' y='-27' width='54' height='54'/%3E%3Crect x='-27' y='-27' width='54' height='54' transform='rotate(45 0 0)'/%3E%3Crect x='213' y='-27' width='54' height='54'/%3E%3Crect x='213' y='-27' width='54' height='54' transform='rotate(45 240 0)'/%3E%3Crect x='-27' y='213' width='54' height='54'/%3E%3Crect x='-27' y='213' width='54' height='54' transform='rotate(45 0 240)'/%3E%3Crect x='213' y='213' width='54' height='54'/%3E%3Crect x='213' y='213' width='54' height='54' transform='rotate(45 240 240)'/%3E%3Cpath d='M27 27L93 93M147 93L213 27M93 147L27 213M147 147L213 213M84 36L36 84M156 36L204 84M36 156L84 204M156 204L204 156'/%3E%3Cpath d='M84 36L84 -10L192 -10L202 0M84 -36L130 -36L130 72L120 82M156 -36L156 10L48 10L38 0M156 36L110 36L110 -72L120 -82'/%3E%3Cpath d='M-36 156L-36 110L72 110L82 120M-36 84L10 84L10 192L0 202M36 84L36 130L-72 130L-82 120M36 156L-10 156L-10 48L0 38'/%3E%3Cpath d='M204 156L204 110L312 110L322 120M204 84L250 84L250 192L240 202M276 84L276 130L168 130L158 120M276 156L230 156L230 48L240 38'/%3E%3Cpath d='M84 276L84 230L192 230L202 240M84 204L130 204L130 312L120 322M156 204L156 250L48 250L38 240M156 276L110 276L110 168L120 158'/%3E%3C/g%3E%3C/svg%3E");
 }
 
 .dark body {
   @apply bg-night text-zinc-200;
+  background-image: radial-gradient(ellipse 120% 60% at 50% -10%, #2b1c0e 0%, transparent 60%);
+  background-repeat: no-repeat;
+}
+
+.dark body::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cg fill='none' stroke='%23e9b165' stroke-opacity='0.07' stroke-width='1.5'%3E%3Crect x='93' y='93' width='54' height='54'/%3E%3Crect x='93' y='93' width='54' height='54' transform='rotate(45 120 120)'/%3E%3Crect x='-27' y='-27' width='54' height='54'/%3E%3Crect x='-27' y='-27' width='54' height='54' transform='rotate(45 0 0)'/%3E%3Crect x='213' y='-27' width='54' height='54'/%3E%3Crect x='213' y='-27' width='54' height='54' transform='rotate(45 240 0)'/%3E%3Crect x='-27' y='213' width='54' height='54'/%3E%3Crect x='-27' y='213' width='54' height='54' transform='rotate(45 0 240)'/%3E%3Crect x='213' y='213' width='54' height='54'/%3E%3Crect x='213' y='213' width='54' height='54' transform='rotate(45 240 240)'/%3E%3Cpath d='M27 27L93 93M147 93L213 27M93 147L27 213M147 147L213 213M84 36L36 84M156 36L204 84M36 156L84 204M156 204L204 156'/%3E%3Cpath d='M84 36L84 -10L192 -10L202 0M84 -36L130 -36L130 72L120 82M156 -36L156 10L48 10L38 0M156 36L110 36L110 -72L120 -82'/%3E%3Cpath d='M-36 156L-36 110L72 110L82 120M-36 84L10 84L10 192L0 202M36 84L36 130L-72 130L-82 120M36 156L-10 156L-10 48L0 38'/%3E%3Cpath d='M204 156L204 110L312 110L322 120M204 84L250 84L250 192L240 202M276 84L276 130L168 130L158 120M276 156L230 156L230 48L240 38'/%3E%3Cpath d='M84 276L84 230L192 230L202 240M84 204L130 204L130 312L120 322M156 204L156 250L48 250L38 240M156 276L110 276L110 168L120 158'/%3E%3C/g%3E%3C/svg%3E");
 }
 
 /* Reveal-on-scroll (activated by the Reveal component) */
