@@ -29,17 +29,24 @@ export default function Talks() {
                   >
                     <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
                       <div>
-                        <div className="flex items-center gap-2 mb-1">
+                        <div className="flex items-center gap-2 mb-1 flex-wrap">
                           <span
                             className={`inline-flex items-center gap-1 text-[0.7rem] font-semibold uppercase tracking-wide px-2 py-0.5 rounded-md ${
                               talk.type === "talk"
                                 ? "bg-accent-50 text-accent-700 dark:bg-accent-900/30 dark:text-accent-300"
+                                : talk.type === "3MT"
+                                ? "bg-amber-50 text-amber-700 dark:bg-amber-900/30 dark:text-amber-300"
                                 : "bg-violet-50 text-violet-700 dark:bg-violet-900/30 dark:text-violet-300"
                             }`}
                           >
-                            {talk.type === "talk" ? <SlidesIcon className="w-3 h-3" /> : <PosterIcon className="w-3 h-3" />}
-                            {talk.type === "talk" ? "Talk" : "Poster"}
+                            {talk.type === "poster" ? <PosterIcon className="w-3 h-3" /> : <SlidesIcon className="w-3 h-3" />}
+                            {talk.type === "talk" ? "Talk" : talk.type === "3MT" ? "3MT" : "Poster"}
                           </span>
+                          {"award" in talk && talk.award && (
+                            <span className="inline-flex items-center gap-1 text-[0.7rem] font-semibold px-2 py-0.5 rounded-md bg-yellow-50 text-yellow-700 dark:bg-yellow-900/30 dark:text-yellow-300">
+                              🏆 {talk.award}
+                            </span>
+                          )}
                           <span className="text-xs text-zinc-500 dark:text-zinc-400">{richText(talk.event)}</span>
                         </div>
                         {"location" in talk && talk.location && (
@@ -58,7 +65,7 @@ export default function Talks() {
                           className="shrink-0 inline-flex items-center gap-1.5 text-sm font-medium px-3 py-1.5 rounded-lg border border-zinc-300 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 hover:border-accent-400 hover:text-accent-700 dark:hover:text-accent-300 transition-colors"
                         >
                           <PdfIcon />
-                          {talk.type === "talk" ? "Slides" : "Poster"}
+                          {talk.type === "poster" ? "Poster" : "Slides"}
                         </a>
                       )}
                     </div>

@@ -15,8 +15,16 @@
     "file": "/slides/Oblivious_unlearning_ERTs_SATML.pdf"
   },
   {
-    "title": "Smart and Blind : Secure AI on encrypted data",
+    "title": "Oblivious Unlearning of Extremely Randomized Trees",
     "type": "poster",
+    "event": "Responsible AI Day @ KDD 2025",
+    "location": "Toronto, Canada",
+    "year": 2025,
+    "award": "3rd place Best Poster Award"
+  },
+  {
+    "title": "Smart and Blind : Secure AI on encrypted data",
+    "type": "3MT",
     "event": "Responsible AI Day @ KDD 2025",
     "location": "Toronto, Canada",
     "year": 2025,
