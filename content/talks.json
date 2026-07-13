@@ -28,7 +28,7 @@
     "event": "Responsible AI Day @ KDD 2025",
     "location": "Toronto, Canada",
     "year": 2025,
-    "file": "/posters/Poster_RAI_KDD25.pdf"
+    "file": "/slides/Smart_and_Blind_3MT_KDD25.pdf"
   },
   {
     "title": "A Non-Comparison Oblivious Sort and Its Application to Private k-NN",
