@@ -20,7 +20,8 @@
     "event": "Responsible AI Day @ KDD 2025",
     "location": "Toronto, Canada",
     "year": 2025,
-    "award": "3rd place Best Poster Award"
+    "award": "3rd place Best Poster Award",
+    "file": "/posters/Poster_RAI_KDD25.pdf"
   },
   {
     "title": "Smart and Blind : Secure AI on encrypted data",
