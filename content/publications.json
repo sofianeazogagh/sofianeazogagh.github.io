@@ -3,14 +3,14 @@
     "id": "poppy",
     "title": "POPPY: Scalable and Secure Spectral Centrality for Distributed Graphs via Homomorphic Encryption",
     "authors": [
-      "Sofiane Azogagh",
       "Claire Guichemerre",
       "Tristan Allard",
-      "Sébastien Gambs",
+      "Sofiane Azogagh",
       "Marc-Olivier Killijian",
+      "Sébastien Gambs",
       "Amr El Abbadi"
     ],
-    "venue": "Proceedings on Privacy Enhancing Technologies (PoPETs) 2026",
+    "venue": "Proceedings on Privacy Enhancing Technologies (PoPETs) 2026(4)",
     "venueUrl": "https://petsymposium.org/2026/",
     "year": 2026,
     "status": "published",
@@ -21,9 +21,9 @@
       "Orbits",
       "Distributed Computing"
     ],
-    "pdf": null,
-    "github": null,
-    "bibtex": null,
+    "pdf": "https://petsymposium.org/popets/2026/popets-2026-0149.pdf",
+    "gitlab": "https://gitlab.inria.fr/cguichem/poppy-pets-artifacts",
+    "bibtex": "@article{guichemerre2026poppy,\n  author = {Claire Guichemerre and Tristan Allard and Sofiane Azogagh and Marc-Olivier Killijian and Sébastien Gambs and Amr El Abbadi},\n  title = {{POPPY}: Scalable and Secure Spectral Centrality for Distributed Graphs via Homomorphic Encryption},\n  journal = {Proceedings on Privacy Enhancing Technologies},\n  volume = {2026},\n  number = {4},\n  pages = {869--890},\n  year = {2026},\n  doi = {10.56553/popets-2026-0149},\n  url = {https://doi.org/10.56553/popets-2026-0149}\n}",
     "award": null
   },
   {
