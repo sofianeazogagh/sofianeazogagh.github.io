@@ -10,6 +10,14 @@ export function GitHubIcon({ className = "w-5 h-5" }: IconProps) {
   );
 }
 
+export function GitLabIcon({ className = "w-5 h-5" }: IconProps) {
+  return (
+    <svg viewBox="0 0 24 24" fill="currentColor" className={className} aria-hidden>
+      <path d="m23.6 9.593-.033-.086L20.3.98a.851.851 0 0 0-.336-.405.875.875 0 0 0-.994.053.868.868 0 0 0-.29.442l-2.204 6.748H7.527L5.323 1.07a.857.857 0 0 0-.29-.441.875.875 0 0 0-.994-.054.859.859 0 0 0-.336.405L.433 9.502l-.032.086a6.066 6.066 0 0 0 2.012 7.01l.01.008.028.02 4.984 3.73 2.466 1.866 1.503 1.136a1.012 1.012 0 0 0 1.224 0l1.503-1.136 2.466-1.866 5.012-3.753.013-.01a6.072 6.072 0 0 0 2.008-7Z" />
+    </svg>
+  );
+}
+
 export function LinkedInIcon({ className = "w-5 h-5" }: IconProps) {
   return (
     <svg viewBox="0 0 24 24" fill="currentColor" className={className} aria-hidden>

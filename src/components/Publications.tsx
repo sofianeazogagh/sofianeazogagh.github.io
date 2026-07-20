@@ -5,6 +5,7 @@ import publications from "@content/publications.json";
 import {
   PdfIcon,
   GitHubIcon,
+  GitLabIcon,
   QuoteIcon,
   AwardIcon,
   SearchIcon,
@@ -22,7 +23,8 @@ interface Publication {
   status: string;
   tags: string[];
   pdf: string | null;
-  github: string | null;
+  github?: string | null;
+  gitlab?: string | null;
   bibtex: string | null;
   award: string | null;
 }
@@ -124,6 +126,16 @@ function PublicationCard({ pub }: { pub: Publication }) {
             className="inline-flex items-center gap-1.5 text-sm font-medium px-3 py-1.5 rounded-lg border border-zinc-300 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 hover:border-accent-400 hover:text-accent-700 dark:hover:text-accent-300 transition-colors"
           >
             <GitHubIcon className="w-4 h-4" /> Code
+          </a>
+        )}
+        {pub.gitlab && (
+          <a
+            href={pub.gitlab}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1.5 text-sm font-medium px-3 py-1.5 rounded-lg border border-zinc-300 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 hover:border-accent-400 hover:text-accent-700 dark:hover:text-accent-300 transition-colors"
+          >
+            <GitLabIcon className="w-4 h-4" /> Code
           </a>
         )}
         {pub.bibtex && (
